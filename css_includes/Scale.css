@@ -44,3 +44,60 @@
     vertical-align: middle;
     text-align: center;
 }
+
+.PennController-Scale {
+    margin: 2em auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.PennController-Scale .scale-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.PennController-Scale .scale-comment {
+    margin: 1em auto;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+}
+
+.PennController-Scale .PennController-Scale-button {
+    padding: 15px 25px;
+    margin: 0 10px;
+    border: 2px solid #4682B4;
+    background-color: white;
+    color: #333333;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.1s;
+    font-weight: normal;
+    min-width: 80px;
+    text-align: center;
+}
+
+.PennController-Scale .PennController-Scale-button:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+}
+
+.PennController-Scale .PennController-Scale-button.selected {
+    background-color: #4682B4;
+    color: white;
+    font-weight: bold;
+}
+
+/* Option labels */
+.PennController-Scale .option {
+    font-size: 18px;
+    margin: 0em 1em;
+    color: #333333;
+    font-weight: bold;
+}

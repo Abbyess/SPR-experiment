@@ -1,11 +1,17 @@
 body {
-    color:  OldLace;
-    background-color: black;
+    color: #333333;
+    background-color: #f5f5f5;
     margin-left: 0;
     margin-top: 5em;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 a {
-	color: Crimson;
+    color: #4682B4; /* SteelBlue */
 }
 
 .lindent { margin-left: 5em; }
@@ -17,31 +23,65 @@ a {
 
 .newTextInput {
     margin-top: 1em;
-    margin-bottom:1em;
-    width:900px;
+    margin-bottom: 1em;
+    width: 900px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 newButton {
-    padding-top: 0.5em;
+    padding: 10px 20px;
     margin-top: 0;
     margin-bottom: 2em;
+    background-color: #4682B4; /* SteelBlue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4682B4; /* SteelBlue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #36648B; /* Darker SteelBlue */
 }
 
 div.bar-container {
     border: 1px solid;
     border-color: #9ea4b1;
-    background-color: black;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 10px 0;
 }
+
 div.bar {
-    background-color:  LightCoral;
+    background-color: #4682B4; /* SteelBlue */
 }
+
 div.fancy {
-    color: LightCoral;
+    color: #4682B4; /* SteelBlue */
+    padding: 15px;
+    background-color: #f0f8ff; /* AliceBlue */
+    border-radius: 8px;
+    border-left: 5px solid #4682B4;
+    margin: 15px 0;
 }
 
 p {
     margin-top: 1em;
-    margin-bottom: 1em;    
+    margin-bottom: 1em;
 }
 
 p.progress-text {
@@ -51,27 +91,49 @@ p.progress-text {
     font-size: small;
     text-align: center;
 }
+
 p.practice-box {
-    color:  black;
+    color: #333333;
     height: 1.5em;
     padding-bottom: 1em;
     font-size: small;
     text-align: center;
 }
+
 span.retry {
-    color:  OldLace;
+    color: #4682B4; /* SteelBlue */
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
+
 span.retry:hover {
     text-decoration: underline;
 }
-span.retry:visited {
-    color:  OldLace;
-}
 
+span.retry:visited {
+    color: #36648B; /* Darker SteelBlue */
+}
 
 .PennController-Scale .option {
     margin: 0em 0.5em;
+}
+
+h1, h2, h3, h4 {
+    color: #36648B; /* Darker SteelBlue */
+}
+
+/* Make checkbox and radio buttons more visible */
+input[type="checkbox"], input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 6px;
+}
+
+/* Style for dropdown menus */
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
 }

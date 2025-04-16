@@ -1,37 +1,48 @@
 .sentence {
-  background-color: black;
+  background-color: #f5f5f5;
   clear: both;
-  color: OldLace;
-  font-family: monospace;
+  color: #333333;
+  font-family: 'Courier New', monospace;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding: 20px;
+  margin: 20px 0;
 }
 .question {
   padding-left: 0.6em;
+  font-size: 20px;
 }
 .rating {
  padding-left: 0.6em;
+ font-size: 20px;
 }
 .sentence {
  line-height: 400%;
 }
 .ospan {
-  border-bottom: 1px solid #9ea4b1;
-  background-color: black;
+  border-bottom: 2px solid #4682B4;
+  background-color: #f5f5f5;
+  padding: 5px 2px;
+  margin: 0 2px;
 }
 .ispan {
   visibility: hidden;
+  font-size: 22px;
+  font-weight: bold;
 }
 .practice-text {
- color: OldLace; 
+ color: #333333; 
  font-weight: bold;
+ font-size: 20px;
 }
 .iphone-next {
  clear: both;
  background: white;
- color: gray;
- foreground: gray;
+ color: #333333;
+ foreground: #333333;
  text-align: center;
  display: table;
- font-size: 20px;
+ font-size: 22px;
  padding-top: 1em;
  padding-bottom: 1em;
  padding-left: 2em;
@@ -39,7 +50,8 @@
  margin-left: auto;
  margin-right: auto;
  cursor: pointer;
- font-family: monospace;
+ font-family: 'Courier New', monospace;
  font-weight: bold;
- -webkit-border-radius: 5px;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
