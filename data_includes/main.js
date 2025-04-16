@@ -286,12 +286,11 @@ Template("exercise.csv", row =>
   newTrial("exercise",
            newPrimer(),
            // Dashed sentence. Segmentation is marked by "*"
-           newController("DashedSentence", {
+           newController("SelfPacedReadingParadigmSentence", {
                s: row.SENTENCE, 
-               mode: "self-paced reading",
-               display: "dashed",
-               hideUnderscores: true,
-               splitRegex: /\*/
+               splitRegex: /\*/,
+               showAhead: false,
+               showBehind: false
            })
            .center()
            .print()
@@ -320,12 +319,11 @@ Template("experiment.csv", row =>
     newTrial( "experiment-"+row.TYPE,
               newPrimer(),
            // Dashed sentence. Segmentation is marked by "*"
-           newController("DashedSentence", {
+           newController("SelfPacedReadingParadigmSentence", {
                s: row.SENTENCE, 
-               mode: "self-paced reading",
-               display: "dashed",
-               hideUnderscores: true,
-               splitRegex: /\*/
+               splitRegex: /\*/,
+               showAhead: false,
+               showBehind: false
            })
            .center()
            .print()
