@@ -1,79 +1,45 @@
 .sentence {
-  background-color: #f5f5f5;
-  clear: both;
-  color: #333333;
-  font-family: 'Courier New', monospace;
-  font-size: 22px;
-  letter-spacing: 1px;
-  padding: 20px;
-  margin: 20px 0;
-  text-align: center;
+    background-color: #f5f5f5;
+    clear: both;
+    color: #333333;
+    font-family: 'Courier New', monospace;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 400%;
 }
+
 .question {
-  padding-left: 0.6em;
-  font-size: 20px;
+    padding-left: 0.6em;
+    font-size: 20px;
 }
+
 .rating {
- padding-left: 0.6em;
- font-size: 20px;
+    padding-left: 0.6em;
+    font-size: 20px;
 }
-.sentence {
- line-height: 400%;
+
+.reading-word {
+    font-size: 22px;
+    font-weight: bold;
 }
-.ospan {
-  border-bottom: 2px solid #4682B4;
-  background-color: #f5f5f5;
-  padding: 5px 2px;
-  margin: 0 2px;
+
+.reading-dash {
+    font-size: 22px;
 }
-.ispan {
-  visibility: hidden;
-  font-size: 22px;
-  font-weight: bold;
-}
+
 .practice-text {
- color: #333333; 
- font-weight: bold;
- font-size: 20px;
-}
-.iphone-next {
- clear: both;
- background: white;
- color: #333333;
- foreground: #333333;
- text-align: center;
- display: table;
- font-size: 22px;
- padding-top: 1em;
- padding-bottom: 1em;
- padding-left: 2em;
- padding-right: 2em;
- margin-left: auto;
- margin-right: auto;
- cursor: pointer;
- font-family: 'Courier New', monospace;
- font-weight: bold;
- border-radius: 5px;
- box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333333; 
+    font-weight: bold;
+    font-size: 20px;
 }
 
-/* Estilos para los guiones que ocultan las palabras */
-.dashed {
-  border-bottom: 2px solid #4682B4 !important;
-  padding: 5px 2px;
-  margin: 0 2px;
-  visibility: visible !important;
-}
-
-/* Asegurarse de que la palabra actual sea visible */
-.visibleword {
-  visibility: visible !important;
-  border-bottom: 2px solid #4682B4 !important;
-  padding: 5px 2px;
-  margin: 0 2px;
-}
-
-/* Ocultar palabras pasadas */
-.hidden {
-  visibility: hidden !important; 
-}
+/* Estilo para el primer que aparece antes de cada oración */
+.primer {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4682B4;
+    margin: 20px 0;
+} 
