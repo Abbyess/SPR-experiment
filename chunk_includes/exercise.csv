@@ -1,0 +1,10 @@
+ITEM,CONDITION,SENTENCE,QUESTION,CORRECT,WRONG
+2001,0,"Jean*aime*les films d'action.",1,"はい","いいえ"
+2002,0,"Marie*et Pierre*vont*au cinéma*chaque semaine.",1,"はい","いいえ"
+2003,0,"Les enfants*jouent*dans le parc.",1,"はい","いいえ"
+2004,0,"Vous*avez*beaucoup de travail*aujourd'hui.",1,"はい","いいえ"
+2005,0,"Elle*chante*très bien.",1,"はい","いいえ"
+2006,0,"Ils*fais*leurs devoirs*tous les soirs.",0,"はい","いいえ"
+2007,0,"Nous*sommes*allés*au restaurant*hier soir.",1,"はい","いいえ"
+2008,0,"Les professeurs*est*en réunion.",0,"はい","いいえ"
+2009,0,"Tu*a*un nouveau téléphone.",0,"はい","いいえ"
