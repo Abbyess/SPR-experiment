@@ -28,11 +28,25 @@ function prepareDashedSentence() {
         .append(ispan = $(document.createElement("span"))
                 .addClass(this.cssPrefix + 'ispan')
                 .text(this.words[j]));
+    
+    // Inicialmente ocultar todas las palabras y mostrar guiones
+    ispan.css('visibility', 'hidden');
+    
     if (! this.showAhead)
       ospan.css('border-color', this.background);
+    
+    // Añadir el guión para cada palabra
+    var dashSpan = $(document.createElement("span"))
+                .addClass(this.cssPrefix + 'dashspan')
+                .text('-'.repeat(this.words[j].length));
+    
+    ospan.append(dashSpan);
+    ospan.css('position', 'relative'); // Asegurar posición relativa para el span contenedor
     this.mainDiv.append(ospan);
+    
     if (j + 1 < this.words.length)
       this.mainDiv.append("&nbsp; ");
+    
     this.wordISpans.push(ispan);
     this.wordOSpans.push(ospan);
     this.iwsnjq.push(ispan[0]);
@@ -188,6 +202,8 @@ define_ibex_controller({
       if (this.currentWord <= this.stoppingPoint) {
         this.owsnjq[w].style.borderColor = this.unshownBorderColor;
         this.iwsnjq[w].style.visibility = "hidden";
+        // Mostrar los guiones nuevamente cuando la palabra desaparece
+        $(this.owsnjq[w]).find('.' + this.cssPrefix + 'dashspan').show();
         if (! this.showBehind)
           this.owsnjq[w].style.borderColor = this.background;
       }
@@ -196,7 +212,9 @@ define_ibex_controller({
       if (this.currentWord < this.stoppingPoint) {
         if (this.showAhead || this.showBehind)
           this.owsnjq[w].style.borderColor = this.shownBorderColor;
+        // Mostrar la palabra y ocultar los guiones
         this.iwsnjq[w].style.visibility = "visible";
+        $(this.owsnjq[w]).find('.' + this.cssPrefix + 'dashspan').hide();
       }
     },
 
